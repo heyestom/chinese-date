@@ -34,4 +34,4 @@ month=$(getFromMap aribic_to_chinese_map $(date "+%_m" | tr -d '[[:space:]]'));
 year=$(date "+%Y");
 
 # without using printf the day/month/year became '??????'
-echo 你好！今天是星期$day_of_the_week, $(printf $day)日$(printf $month)月$(printf $year)年。;
+echo 你好！今天是$(printf $year)年$(printf $month)月$(printf $day)日, 星期$(printf $day_of_the_week)。;
